@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b45b3fc1-7fff-42ac-bf57-9520b5e62ed6": {
+      "ProjectGuid": "b45b3fc1-7fff-42ac-bf57-9520b5e62ed6",
+      "DisplayName": "Kursov",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
