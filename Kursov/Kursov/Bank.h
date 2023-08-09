@@ -1,4 +1,4 @@
-//Bank.h
+п»ї//Bank.h
 
 #pragma once
 
@@ -13,37 +13,37 @@ using namespace std;
 class Banks {
 
 private:
-	string name; //Наименование банка
-	string status; //Статус (форма собственности)
-	string contribution; //Виды вкладов
-	string interest; //Годовые проценты для каждого вида вклада
-	string address; //Адрес
+	string name; //РќР°РёРјРµРЅРѕРІР°РЅРёРµ Р±Р°РЅРєР°
+	string status; //РЎС‚Р°С‚СѓСЃ (С„РѕСЂРјР° СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚Рё)
+	string contribution; //Р’РёРґС‹ РІРєР»Р°РґРѕРІ
+	string interest; //Р“РѕРґРѕРІС‹Рµ РїСЂРѕС†РµРЅС‚С‹ РґР»СЏ РєР°Р¶РґРѕРіРѕ РІРёРґР° РІРєР»Р°РґР°
+	string address; //РђРґСЂРµСЃ
 
 public:
-	Banks(); //Конструктор без параметров
-	void input(); //Ввод данных в переменные string
-	void inputAddress(string addr); //Ввод нового адреса (4)
-	void inputMini(string NameTemp, string AddressTemp); //Ввод данных в мини таблицу
-	void output(); //Вывод данных
-	void outputName(); //Вывод наименования банка
-	void outputMini(); //Вывод мини таблицы
-	void diskOut(ofstream& fout); //Запись в файл
-	void diskOut4(ofstream& fout); //Запись в файл без адреса
-	void diskOutAddress(ofstream& fout); //Запись адреса в файл
-	void diskOutMini(ofstream& fout); //Запись мини таблицы в файл
-	void diskIn(ifstream& fin); //Чтение из файла
-	void diskIn4(ifstream& fin); //Чтение из файла без адреса
-	void diskInMini(ifstream& fin); //Чтение мини таблицы из файла
+	Banks(); //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ
+	void input(); //Р’РІРѕРґ РґР°РЅРЅС‹С… РІ РїРµСЂРµРјРµРЅРЅС‹Рµ string
+	void inputAddress(string addr); //Р’РІРѕРґ РЅРѕРІРѕРіРѕ Р°РґСЂРµСЃР° (4)
+	void inputMini(string NameTemp, string AddressTemp); //Р’РІРѕРґ РґР°РЅРЅС‹С… РІ РјРёРЅРё С‚Р°Р±Р»РёС†Сѓ
+	void output(); //Р’С‹РІРѕРґ РґР°РЅРЅС‹С…
+	void outputName(); //Р’С‹РІРѕРґ РЅР°РёРјРµРЅРѕРІР°РЅРёСЏ Р±Р°РЅРєР°
+	void outputMini(); //Р’С‹РІРѕРґ РјРёРЅРё С‚Р°Р±Р»РёС†С‹
+	void diskOut(ofstream& fout); //Р—Р°РїРёСЃСЊ РІ С„Р°Р№Р»
+	void diskOut4(ofstream& fout); //Р—Р°РїРёСЃСЊ РІ С„Р°Р№Р» Р±РµР· Р°РґСЂРµСЃР°
+	void diskOutAddress(ofstream& fout); //Р—Р°РїРёСЃСЊ Р°РґСЂРµСЃР° РІ С„Р°Р№Р»
+	void diskOutMini(ofstream& fout); //Р—Р°РїРёСЃСЊ РјРёРЅРё С‚Р°Р±Р»РёС†С‹ РІ С„Р°Р№Р»
+	void diskIn(ifstream& fin); //Р§С‚РµРЅРёРµ РёР· С„Р°Р№Р»Р°
+	void diskIn4(ifstream& fin); //Р§С‚РµРЅРёРµ РёР· С„Р°Р№Р»Р° Р±РµР· Р°РґСЂРµСЃР°
+	void diskInMini(ifstream& fin); //Р§С‚РµРЅРёРµ РјРёРЅРё С‚Р°Р±Р»РёС†С‹ РёР· С„Р°Р№Р»Р°
 
-	string getInterest() { //Получить проценты банка
+	string getInterest() { //РџРѕР»СѓС‡РёС‚СЊ РїСЂРѕС†РµРЅС‚С‹ Р±Р°РЅРєР°
 		return interest;
 	}
 
-	string getName() { //Получить наименование банка
+	string getName() { //РџРѕР»СѓС‡РёС‚СЊ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ Р±Р°РЅРєР°
 		return name;
 	}
 
-	string getAddress() { //Получить адрес банка
+	string getAddress() { //РџРѕР»СѓС‡РёС‚СЊ Р°РґСЂРµСЃ Р±Р°РЅРєР°
 		return address;
 	}
 };

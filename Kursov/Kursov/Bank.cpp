@@ -1,4 +1,4 @@
-//Bank.cpp
+п»ї//Bank.cpp
 
 #include "Bank.h"
 #include <iostream>
@@ -6,7 +6,7 @@
 
 using namespace std;
 
-Banks::Banks() { //Конструктор без параметров
+Banks::Banks() { //РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ Р±РµР· РїР°СЂР°РјРµС‚СЂРѕРІ
 	name = "No";
 	status = "No";
 	contribution = "No";
@@ -14,56 +14,56 @@ Banks::Banks() { //Конструктор без параметров
 	address = "No";
 }
 
-void Banks::input() {  //Ввод данных в переменные string
-	cout << "Введите наименование коммерческого банка: ";
+void Banks::input() {  //Р’РІРѕРґ РґР°РЅРЅС‹С… РІ РїРµСЂРµРјРµРЅРЅС‹Рµ string
+	cout << "Р’РІРµРґРёС‚Рµ РЅР°РёРјРµРЅРѕРІР°РЅРёРµ РєРѕРјРјРµСЂС‡РµСЃРєРѕРіРѕ Р±Р°РЅРєР°: ";
 	cin.ignore();
 	getline(cin, name, '\n');
 
-	cout << "Введите статус (форму собственности) коммерческого банка ";
-	cout << "\nНапример: Государственный, Муниципальный, Частный, Акционерный, Смешанный: ";
+	cout << "Р’РІРµРґРёС‚Рµ СЃС‚Р°С‚СѓСЃ (С„РѕСЂРјСѓ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚Рё) РєРѕРјРјРµСЂС‡РµСЃРєРѕРіРѕ Р±Р°РЅРєР° ";
+	cout << "\nРќР°РїСЂРёРјРµСЂ: Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№, РњСѓРЅРёС†РёРїР°Р»СЊРЅС‹Р№, Р§Р°СЃС‚РЅС‹Р№, РђРєС†РёРѕРЅРµСЂРЅС‹Р№, РЎРјРµС€Р°РЅРЅС‹Р№: ";
 	getline(cin, status, '\n');
 
-	cout << "Введите виды вкладов коммерческого банка (<= 5) через запятую: ";
+	cout << "Р’РІРµРґРёС‚Рµ РІРёРґС‹ РІРєР»Р°РґРѕРІ РєРѕРјРјРµСЂС‡РµСЃРєРѕРіРѕ Р±Р°РЅРєР° (<= 5) С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ: ";
 	getline(cin, contribution, '\n');
 
-	cout << "Введите годовые проценты для разных вкладов (через пробел, без знака %): ";
+	cout << "Р’РІРµРґРёС‚Рµ РіРѕРґРѕРІС‹Рµ РїСЂРѕС†РµРЅС‚С‹ РґР»СЏ СЂР°Р·РЅС‹С… РІРєР»Р°РґРѕРІ (С‡РµСЂРµР· РїСЂРѕР±РµР», Р±РµР· Р·РЅР°РєР° %): ";
 	getline(cin, interest, '\n');
 
-	cout << "Введите адресс коммерческого банка: ";
+	cout << "Р’РІРµРґРёС‚Рµ Р°РґСЂРµСЃСЃ РєРѕРјРјРµСЂС‡РµСЃРєРѕРіРѕ Р±Р°РЅРєР°: ";
 	getline(cin, address, '\n');
 
 	cout << "\n";
 }
 
-void Banks::inputMini(string NameTemp, string AddressTemp) {  //Ввод данных в мини таблицу
+void Banks::inputMini(string NameTemp, string AddressTemp) {  //Р’РІРѕРґ РґР°РЅРЅС‹С… РІ РјРёРЅРё С‚Р°Р±Р»РёС†Сѓ
 	name = NameTemp;
 	address = AddressTemp;
 }
 
-void Banks::inputAddress(string addr) {  //Ввод нового адреса (4)
+void Banks::inputAddress(string addr) {  //Р’РІРѕРґ РЅРѕРІРѕРіРѕ Р°РґСЂРµСЃР° (4)
 	address = addr;
 }
 
-void Banks::output() {  //Вывод данных
-	cout << "Наименование: " << name;
-	cout << "\nСтатус (форма собственности): " << status;
-	cout << "\nВиды вкладов: " << contribution;
-	cout << "\nГодовые проценты для разных вкладов: " << interest;
-	cout << "\nАдрес: " << address;
+void Banks::output() {  //Р’С‹РІРѕРґ РґР°РЅРЅС‹С…
+	cout << "РќР°РёРјРµРЅРѕРІР°РЅРёРµ: " << name;
+	cout << "\nРЎС‚Р°С‚СѓСЃ (С„РѕСЂРјР° СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚Рё): " << status;
+	cout << "\nР’РёРґС‹ РІРєР»Р°РґРѕРІ: " << contribution;
+	cout << "\nР“РѕРґРѕРІС‹Рµ РїСЂРѕС†РµРЅС‚С‹ РґР»СЏ СЂР°Р·РЅС‹С… РІРєР»Р°РґРѕРІ: " << interest;
+	cout << "\nРђРґСЂРµСЃ: " << address;
 	cout << endl;
 }
 
-void Banks::outputName() {  //Вывод наименивания банка
+void Banks::outputName() {  //Р’С‹РІРѕРґ РЅР°РёРјРµРЅРёРІР°РЅРёСЏ Р±Р°РЅРєР°
 	cout << name;
 }
 
-void Banks::outputMini() {  //Вывод мини таблицы
-	cout << "Наименование: " << name;
-	cout << "\nАдрес: " << address;
+void Banks::outputMini() {  //Р’С‹РІРѕРґ РјРёРЅРё С‚Р°Р±Р»РёС†С‹
+	cout << "РќР°РёРјРµРЅРѕРІР°РЅРёРµ: " << name;
+	cout << "\nРђРґСЂРµСЃ: " << address;
 	cout << endl;
 }
 
-void Banks::diskOut(ofstream& fout) { //Ввод в файл
+void Banks::diskOut(ofstream& fout) { //Р’РІРѕРґ РІ С„Р°Р№Р»
 	fout << name << endl;
 	fout << status << endl;
 	fout << contribution << endl;
@@ -71,23 +71,23 @@ void Banks::diskOut(ofstream& fout) { //Ввод в файл
 	fout << address << endl;
 }
 
-void Banks::diskOut4(ofstream& fout) { //Запись в файл без адреса
+void Banks::diskOut4(ofstream& fout) { //Р—Р°РїРёСЃСЊ РІ С„Р°Р№Р» Р±РµР· Р°РґСЂРµСЃР°
 	fout << name << endl;
 	fout << status << endl;
 	fout << contribution << endl;
 	fout << interest << endl;
 }
 
-void Banks::diskOutAddress(ofstream& fout) { //Запись адреса в файл
+void Banks::diskOutAddress(ofstream& fout) { //Р—Р°РїРёСЃСЊ Р°РґСЂРµСЃР° РІ С„Р°Р№Р»
 	fout << address << endl;
 }
 
-void Banks::diskOutMini(ofstream& fout) { //Запись мини таблицы в файл
+void Banks::diskOutMini(ofstream& fout) { //Р—Р°РїРёСЃСЊ РјРёРЅРё С‚Р°Р±Р»РёС†С‹ РІ С„Р°Р№Р»
 	fout << name << endl;
 	fout << address << endl;
 }
 
-void Banks::diskIn(ifstream& fin) { //Чтение из файла
+void Banks::diskIn(ifstream& fin) { //Р§С‚РµРЅРёРµ РёР· С„Р°Р№Р»Р°
 	getline(fin, name);
 	getline(fin, status);
 	getline(fin, contribution);
@@ -95,14 +95,14 @@ void Banks::diskIn(ifstream& fin) { //Чтение из файла
 	getline(fin, address);
 }
 
-void Banks::diskIn4(ifstream& fin) { //Чтение из файла без адреса
+void Banks::diskIn4(ifstream& fin) { //Р§С‚РµРЅРёРµ РёР· С„Р°Р№Р»Р° Р±РµР· Р°РґСЂРµСЃР°
 	getline(fin, name);
 	getline(fin, status);
 	getline(fin, contribution);
 	getline(fin, interest);
 }
 
-void Banks::diskInMini(ifstream& fin) { //Чтение мини таблицы из файла
+void Banks::diskInMini(ifstream& fin) { //Р§С‚РµРЅРёРµ РјРёРЅРё С‚Р°Р±Р»РёС†С‹ РёР· С„Р°Р№Р»Р°
 	getline(fin, name);
 	getline(fin, address);
 }
